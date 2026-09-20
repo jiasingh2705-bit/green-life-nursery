@@ -37,7 +37,7 @@ const featured = [
   {
     name: "Monstera Deliciosa",
     detail: "Swiss cheese plant · 60cm",
-    price: "$48",
+    price: "₹499",
     light: "Bright, indirect",
     water: "Weekly",
     image: plantMonstera,
@@ -45,7 +45,7 @@ const featured = [
   {
     name: "Fiddle Leaf Fig",
     detail: "Ficus lyrata · 120cm",
-    price: "$89",
+    price: "₹899",
     light: "Bright light",
     water: "Fortnightly",
     image: plantFiddle,
@@ -53,7 +53,7 @@ const featured = [
   {
     name: "Snake Plant",
     detail: "Sansevieria · 45cm",
-    price: "$32",
+    price: "₹299",
     light: "Any light",
     water: "Monthly",
     image: plantSnake,
@@ -61,7 +61,7 @@ const featured = [
   {
     name: "Echeveria Trio",
     detail: "Succulent set · 10cm",
-    price: "$24",
+    price: "₹349",
     light: "Full sun",
     water: "Sparingly",
     image: plantSucculent,
@@ -456,6 +456,9 @@ function Index() {
             </span>
             <span>Instagram · Pinterest · Newsletter</span>
           </div>
+          <p className="mt-4 text-center text-xs text-cream/50">
+            Created by Jiya Singh &amp; Neha Vaidya
+          </p>
         </div>
       </footer>
     </div>
