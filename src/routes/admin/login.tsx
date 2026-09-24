@@ -1,4 +1,4 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, redirect, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { Eye, EyeOff, Leaf, Lock, User, AlertCircle } from "lucide-react";
 import { adminLogin, isAdminLoggedIn } from "@/lib/admin-auth";
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/admin/login")({
     ],
   }),
   beforeLoad: () => {
-    if (isAdminLoggedIn()) throw Route.redirect({ to: "/admin" });
+    if (isAdminLoggedIn()) throw redirect({ to: "/admin" });
   },
   component: AdminLogin,
 });

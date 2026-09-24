@@ -252,7 +252,7 @@ function Card({ title, children }: { title: string; children: React.ReactNode })
     </section>
   );
 }
-function Table({ title, cols, rows }: { title?: string; cols: string[]; rows: React.ReactNode[][] }) {
+function Table({ title, cols, rows }: { title?: string | undefined; cols: string[]; rows: React.ReactNode[][] }) {
   return (
     <Card title={title ?? "All records"}>
       <div className="overflow-x-auto">
